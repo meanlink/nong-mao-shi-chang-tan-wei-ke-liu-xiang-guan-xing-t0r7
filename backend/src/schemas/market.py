@@ -7,3 +7,4 @@ class SampleIn(BaseModel): stall_id:int; campaign_window_id:int|None=None; sampl
 class AnalysisIn(BaseModel): name:str=Field(min_length=3); sample_ids:list[int]|None=None
 class ReviewIn(BaseModel): decision:str; note:str=''
 class BriefIn(BaseModel): analysis_id:int; title:str=Field(min_length=3); audience:str='招商委员会'
+class VoidIn(BaseModel): reason:str=Field(min_length=8,max_length=500)

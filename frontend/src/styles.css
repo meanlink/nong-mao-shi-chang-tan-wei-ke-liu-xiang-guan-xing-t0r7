@@ -48,3 +48,10 @@
 .attribution-result a, .attribution-link { text-decoration: underline; text-underline-offset: 3px; }
 .attribution-notice:empty, .attribution-form .feedback:empty { display: none; }
 @media (max-width: 1080px) { .attribution-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* 样本报废与简报撤回 */
+.brief-voided { opacity: 0.9; border-left: 3px solid var(--coral); }
+.brief-reason { margin: 16px 0 4px; padding: 12px 14px; border: 1px dashed oklch(61% .15 35 / .5); background: oklch(95% .03 35 / .55); display: grid; gap: 5px; font-size: 11px; line-height: 1.6; }
+.brief-reason b { color: var(--coral); font-size: 11px; letter-spacing: .08em; }
+.brief-reason small { color: var(--muted); font-size: 10px; }
+#void-feedback { margin-top: 12px; }
